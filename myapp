@@ -1,0 +1,8 @@
+├── public/
+│   ├── index.html
+│   ├── styles.css
+│   └── script.js
+├── database/
+│   └── recipes.db
+├── server.js
+└── package.json

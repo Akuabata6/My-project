@@ -1,0 +1,64 @@
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.mood-selector {
+  margin: 20px 0;
+}
+
+.mood-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mood-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.mood-button:hover {
+  background-color: #45a049;
+}
+
+.recipe-display {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.recipe-display ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recipe-display li {
+  margin: 5px 0;
+}
+
+.new-recipe-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #2196F3;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.new-recipe-button:hover {
+  background-color: #1976D2;
+} 

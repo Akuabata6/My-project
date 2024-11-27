@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Recipes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8 max-w-2xl">
+        <h1 class="text-4xl font-bold text-center mb-8">Mood Food</h1>
+        
+        <div class="mood-selector mb-8">
+            <h2 class="text-2xl text-center mb-4">How are you feeling today?</h2>
+            <div class="grid grid-cols-2 gap-4">
+                <button class="mood-btn bg-yellow-400 hover:bg-yellow-500" data-mood="happy">Happy</button>
+                <button class="mood-btn bg-blue-400 hover:bg-blue-500" data-mood="sad">Sad</button>
+                <button class="mood-btn bg-purple-400 hover:bg-purple-500" data-mood="stressed">Stressed</button>
+                <button class="mood-btn bg-green-400 hover:bg-green-500" data-mood="energetic">Energetic</button>
+            </div>
+        </div>
+
+        <div id="recipe-display" class="hidden bg-white rounded-lg p-6 shadow-md mb-8">
+            <h2 id="recipe-name" class="text-2xl font-bold mb-4"></h2>
+            <div class="mb-4">
+                <h3 class="font-bold mb-2">Ingredients:</h3>
+                <ul id="ingredients-list" class="list-disc pl-5"></ul>
+            </div>
+            <div class="mb-4">
+                <h3 class="font-bold mb-2">Instructions:</h3>
+                <p id="instructions"></p>
+            </div>
+            <button id="new-recipe" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                Try Another Recipe
+            </button>
+        </div>
+
+        <div class="bg-white rounded-lg p-6 shadow-md">
+            <h2 class="text-2xl font-bold mb-4">Add New Recipe</h2>
+            <form id="add-recipe-form" class="space-y-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Recipe Name</label>
+                    <input type="text" name="name" required 
+                           class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2">
+                </div>
+
+                <se>
+                    <label class="block text-sm font-medium text-gray-700">Mood</label>
+                    <select name="mood" required 
+                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2">
+                        <option value="happy">Happy</option>
+                        <option value="sad">Sad</option>
+                        <option value="stressed">Stressed</option>
+                        <option value="energetic">Energetic</option>
+                    </select>
+                    <select id ="mood-select" class="w-full p-2 border rounded"></select>
+                    <option value="happy">Happy</option>
+                        <option value="sad">Sad</option>
+                        <option value="stressed">Stressed</option>
+                        <option value="energetic">Energetic</option>
+                    
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Ingredients (comma separated)</label>
+                    <textarea name="ingredients" required 
+                              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2"
+                              rows="3"></textarea>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Instructions</label>
+                    <textarea name="instructions" required 
+                              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2"
+                              rows="3"></textarea>
+                </div>
+
+                <button type="submit" 
+                        class="w-full bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">
+                    Add Recipe
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
