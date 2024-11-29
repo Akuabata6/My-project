@@ -4,6 +4,7 @@ const Recipie = require("./routes/moodMeal");
 const dotenv = require("dotenv");
 const colors = require("colors");
 const db = require("./config/db");
+const errorHandler = require("./middleware/error");
 
 dotenv.config({ path: "./config/config.env" });
 
@@ -13,8 +14,10 @@ const port = process.env.PORT || 3030;
 if (process.env.NODE_ENV === "development") {
   app.use(morgan("dev"));
 }
+
 // Serve static files
 app.use(express.static("public"));
+app.use(errorHandler);
 
 // API endpoint to get recipes by mood
 app.use("/api/v1/recipes/", Recipie);
