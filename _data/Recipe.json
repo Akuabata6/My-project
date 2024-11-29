@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Colorful African Salad(Abacha)",
+    "mood": "happy",
+    "ingredients": "Raw cassava, garden eggs, ugba, titus fish, ogiri, ehuru, omuanya, crayfish, Palm oil",
+    "instructions": "Mix all ingredients in a bowl. Add your favorite dressing!"
+  },
+  {
+    "name": "Cold watermelon juice",
+    "mood": "happy",
+    "ingredients": "Watermelon, Ice",
+    "instructions": "Blend watermelon, add ice and serve."
+  },
+  {
+    "name": "Nigerian Fried Rice",
+    "mood": "sad",
+    "ingredients": "Basmati rice, Chicken, Onions, Carrots, Green peas",
+    "instructions": "Cook rice, make sauce, combine and cook on low heat covered with foil then serve."
+  },
+  {
+    "name": "Sweet pineapple juice",
+    "mood": "sad",
+    "ingredients": "fresh ripe pineapple, Ice",
+    "instructions": "Blend pineapple, add ice and serve."
+  },
+  {
+    "name": "Calming Chamomile Tea Cake",
+    "mood": "stressed",
+    "ingredients": "Flour, Chamomile tea bags, Honey, Butter, Eggs",
+    "instructions": "Infuse milk with tea, mix ingredients, bake for 25 minutes."
+  },
+  {
+    "name": "Lavender Shortbread",
+    "mood": "stressed",
+    "ingredients": "Butter, Sugar, Flour, Dried lavender, Vanilla",
+    "instructions": "Mix ingredients, chill dough, cut shapes, bake until golden."
+  },
+  {
+    "name": "Power Protein Bowl",
+    "mood": "energetic",
+    "ingredients": "Quinoa, Grilled chicken, Kale, Sweet potato, Almonds",
+    "instructions": "Cook quinoa, grill chicken, combine with vegetables and nuts."
+  },
+  {
+    "name": "Energy Balls",
+    "mood": "energetic",
+    "ingredients": "Dates, Oats, Peanut butter, Chia seeds, Dark chocolate",
+    "instructions": "Blend ingredients, form balls, chill for 30 minutes."
+  }
+]
